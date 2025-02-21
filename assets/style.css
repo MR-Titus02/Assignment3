@@ -11,3 +11,29 @@ table, tr, td {
     border: 1px solid #FF6F0F;
     border-collapse: collapse;
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown_ctn {
+    display:none;
+    position: absolute;
+    z-index: 2;
+}
+.dropdown:hover .dropdown_ctn {
+    display: block;
+    background-color: #F8ECE4;
+    color: black;
+    padding: 5px;
+}
+.dropdown:hover {
+    color: #FF6F0F;
+}
+.navbar > a:hover {
+    color: #FF6F0F;
+}
+.SignUp:hover {
+    background-color: #FF6F0F;
+    transition-duration: 500ms;
+}

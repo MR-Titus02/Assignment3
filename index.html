@@ -7,24 +7,31 @@
     <title>Titus</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 
 <body>
-    <div class= "bg-cover bg-no-repeat bg-center h-screen bg-blend-multiply bg-teal-700" style="background-image: url('assets/images/carousel-1.jpg'); ">
+    <div class= "bg-cover bg-no-repeat bg-center h-screen bg-blend-multiply bg-teal-700 " style="background-image: url('assets/images/carousel-1.jpg'); ">
        <nav class="flex text-white h-10 relative">
-        <div>
-            <img src="assets/images/finallogo.png" class="w-20 h-20 ">
-        </div>
-        <div class="mt-8 flex " >
-            <a href="#">Home</a>
+        <img src="assets/images/finallogo.png" alt="logo" style="width: 120px; height: 120px;">
+        <div class="flex pt-7 space-x-4 navbar" style="margin-left: 60%;">
+            <a href="#" class="orange">Home</a>
             <a href="#">About</a>
             <a href="#">Services</a>
-            <a href="Menu">Pages</a>
-            <button class="border-yellow-600 border orange rounded-lg row-end-5">SignUp</button>
+            <a href="#">Menu</a>
+            <div class="dropdown">
+                <a href="#">Pages <i class="fa fa-chevron-down"></i></a>
+                <a href="#" class="dropdown_ctn">Contact</a>
+            </div>
+            <button class="border border-orange-500 p-2 px-4 rounded-lg SignUp " style="height: fit-content; width: fit-content;">Sign Up <img style="display: inline-block;" src="assets/images/arrow.png"></button>
         </div>
-        
-
        </nav>
+       <div>
+        <h1 class="text-white text-center font-bold text-5xl ml-96 mt-48 px-20 max-w-3xl">From Our Kitchen to Your Table, Fresh Everyday</h1>
+        <p class="text-white text-center text-gray-800 text-sm  ml-120 px-5 max-w-lg">Enjoy goodness of fresh, flavourful food delivered straight to you,  ready to brighten your day with every bite!</p>
+        <button class="orange-bg p-2 px-4 rounded-lg text-white mt-10 cursor-pointer hover:scale-110 transition delay-150 duration-300" style="margin-left: 45%;" >Explore More <img style="display: inline-block;" src="assets/images/arrow.png"></button>
+       </div>
     </div>
 <!-- section 2 -->
  <div class="flex m-30 ">
@@ -34,7 +41,7 @@
     </div>
     <div style="margin-left: 45%; max-width: 40%;">  <!-- setting margin left 45% of screen for this div -->
         <button class="bg-orange-100 p-2 border rounded-lg orange">About Us</button>
-        <h1 class="font-mono text-xl font-bold pt-3">Join us on our journey to celebrate the <br>art of food</h1>
+        <h1 class="font-mono text-xl font-bold pt-3">Join us on our journey to celebrate the art of food</h1>
         <p class="bg-gray-300 p-4 shadow-xl mt-5">You don't have to cook fancy or complicated masterpiece- just good food from fresh ingredients 
             <br><span class="orange">Julia Chid</span>
         </p>

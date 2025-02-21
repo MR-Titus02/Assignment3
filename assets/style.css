@@ -1,3 +1,13 @@
+.orange {
+    color: #FF6F0F;
+}
+.orange-bg{
+    background-color: #FF6F0F;
+}
 .section4 {
     background-color: #F8ECE4;
+}
+table, tr, td {
+    border: 1px solid #FF6F0F;
+    border-collapse: collapse;
 }

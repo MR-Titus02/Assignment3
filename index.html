@@ -20,7 +20,7 @@
             <a href="#">About</a>
             <a href="#">Services</a>
             <a href="Menu">Pages</a>
-            <button class="border-yellow-600 border text-yellow-600 rounded-lg row-end-5">SignUp</button>
+            <button class="border-yellow-600 border orange rounded-lg row-end-5">SignUp</button>
         </div>
         
 
@@ -33,10 +33,10 @@
         <img src="assets/images/about-2.jpg" class="w-50 h-50 border rounded-3xl relative z-50 border-8 border-white left hover:scale-110 transition delay-150 duration-300" style="left: 400px; bottom: 50px;">
     </div>
     <div style="margin-left: 45%; max-width: 40%;">  <!-- setting margin left 45% of screen for this div -->
-        <button class="bg-orange-100 p-2 border rounded-lg text-orange-600">About Us</button>
+        <button class="bg-orange-100 p-2 border rounded-lg orange">About Us</button>
         <h1 class="font-mono text-xl font-bold pt-3">Join us on our journey to celebrate the <br>art of food</h1>
         <p class="bg-gray-300 p-4 shadow-xl mt-5">You don't have to cook fancy or complicated masterpiece- just good food from fresh ingredients 
-            <br><span class="text-orange-600">Julia Chid</span>
+            <br><span class="orange">Julia Chid</span>
         </p>
         <p class="py-6 text-sm text-gray-800">We use only the freshest ingredients sourced locally whenever possible,<br>
         to create dishes that are as wholesome as delicious. Our teams of<br>
@@ -44,21 +44,46 @@
         packed with flavor and love.
         </p>
         <div class="space-x-4">
-            <button class="border bg-orange-500 rounded-md p-2 text-white cursor-pointer hover:scale-110 transition delay-150 duration-300">Learn More</button>
-            <button class="border border-orange-500 bg-white rounded-md p-2 text-orange-600 cursor-pointer hover:scale-110 transition delay-100 duration-300">Contact Us</button>
+            <button class="border orange-bg rounded-md p-2 text-white cursor-pointer hover:scale-110 transition delay-150 duration-300">Learn More</button>
+            <button class="border border-orange-500 bg-white rounded-md p-2 orange cursor-pointer hover:scale-110 transition delay-100 duration-300">Contact Us</button>
         </div>
     </div>
  </div>
  <!-- Section 4 -->
   <div class="section4">
-    <h6 class="text-center pt-15 text-orange-600">Our specials</h6>
+    <h6 class="text-center pt-15 orange">Our specials</h6>
     <h2 class="font-bold text-3xl text-center py-10">Discover a variety of dishes crafted with care.</h2>
-    <div class="grid grid-cols-3 divide-x-2 divide-indigo-500 justify-items-center" style="max-width: 300px;">
-        <div>All</div>
-        <div>Vegetarian</div>
-        <div>Beverages</div>
-      </div>
-
+    <div class="flex justify-center pb-10">
+        <table > <!--set border radius -->
+            <tr>
+                <td> <button class="text-white orange-bg p-1">All</button> </td> <!--set hover and JS-->
+                <td>  <button class="orange p-1">Vegetarian</button> </td>
+                <td> <button class="orange p-1">Beverages</button> </td>
+            </tr>
+        </table>
+    </div>
+    <div class="grid grid-cols-4 gap-8 mx-20 pb-30">
+        <div class="bg-white border-t-4 border-orange-500">
+            <h3 class="text-center"><span class="orange-bg p-1 rounded-b-md">Rice & Curry</span></h3>
+            <h4 class="font-bold text-xl text-center pt-4">A Taste in Every Bite</h4>
+            <p class="text-center px-6 text-md text-gray-800 pt leading-tight">Explore the soul of Sri Lankan Culture with Rice & Curry</p>
+            <img class="pt-15" src="assets/images/courses-1.jpg"></div>
+        <div class="bg-white border-t-4 border-orange-500">
+            <h3 class="text-center"><span class="orange-bg p-1 rounded-b-md">Koththu</span></h3>
+            <h4 class="font-bold text-xl text-center pt-4">Cheesy, and delicious</h4>
+            <p class="text-center px-6 text-md text-gray-800 pt leading-tight">Everyone is a perfect balance of spice and creamy goodness</p>
+            <img class="pt-15" src="assets/images/courses-3.jpg"></div>
+        <div class="bg-white border-t-4 border-orange-500">
+            <h3 class="text-center"><span class="orange-bg p-1 rounded-b-md">Mango Juice</span></h3>
+            <h4 class="font-bold text-xl text-center pt-4">Refreshing and Natural</h4>
+            <p class="text-center px-6 text-md text-gray-800 pt leading-tight">Enjoy a chilled glass of fresh mango juicey</p>
+            <img class="pt-15" src="assets/images/beverage-1.jpg"></div>
+        <div class="bg-white border-t-4 border-orange-500">
+            <h3 class="text-center"><span class="orange-bg p-1 rounded-b-md">Milk Tea</span></h3>
+            <h4 class="font-bold text-xl text-center pt-4">A Warm cup of comfort</h4>
+            <p class="text-center px-6 text-md text-gray-800 pt leading-tight">The perfcet blend of tea and milk for a rich flavor</p>
+            <img class="pt-15" src="assets/images/beverage-2.jpg" style="height: 376px; width: 380px;"></div>
+    </div>
   </div>
 </body>
 

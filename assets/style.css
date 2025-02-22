@@ -37,3 +37,16 @@ table, tr, td {
     background-color: #FF6F0F;
     transition-duration: 500ms;
 }
+.bluebg {
+    background-color: #040720;
+}
+.icons {
+    border: 1px solid white;
+    padding: 3px;
+    border-radius: 3px;
+    margin: 0 1px;
+    
+}
+.link:hover , .icons:hover {
+    color: #FF6F0F;
+}

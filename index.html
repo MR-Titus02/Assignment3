@@ -6,26 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titus</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <style>
-    </style>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 
 <body>
-    <div class= "bg-cover bg-no-repeat bg-center h-screen bg-blend-multiply bg-teal-700" style="background-image: url('assets/images/carousel-1.jpg'); ">
+    <div class= "bg-cover bg-no-repeat bg-center h-screen bg-blend-multiply bg-teal-700 " style="background-image: url('assets/images/carousel-1.jpg'); ">
        <nav class="flex text-white h-10 relative">
-        <div>
-            <img src="assets/images/finallogo.png" class="w-20 h-20 ">
-        </div>
-        <div class="mt-8 flex " >
-            <a href="#">Home</a>
+        <img src="assets/images/finallogo.png" alt="logo" style="width: 120px; height: 120px;">
+        <div class="flex pt-7 space-x-4 navbar" style="margin-left: 60%;">
+            <a href="#" class="orange">Home</a>
             <a href="#">About</a>
             <a href="#">Services</a>
-            <a href="Menu">Pages</a>
-            <button class="border-yellow-600 border text-yellow-600 rounded-lg row-end-5">SignUp</button>
+            <a href="#">Menu</a>
+            <div class="dropdown">
+                <a href="#">Pages <i class="fa fa-chevron-down"></i></a>
+                <a href="#" class="dropdown_ctn">Contact</a>
+            </div>
+            <button class="border border-orange-500 p-2 px-4 rounded-lg SignUp " style="height: fit-content; width: fit-content;">Sign Up <img style="display: inline-block;" src="assets/images/arrow.png"></button>
         </div>
-        
-
        </nav>
+       <div>
+        <h1 class="text-white text-center font-bold text-5xl ml-96 mt-48 px-20 max-w-3xl">From Our Kitchen to Your Table, Fresh Everyday</h1>
+        <p class="text-white text-center text-gray-800 text-sm  ml-120 px-5 max-w-lg">Enjoy goodness of fresh, flavourful food delivered straight to you,  ready to brighten your day with every bite!</p>
+        <button class="orange-bg p-2 px-4 rounded-lg text-white mt-10 cursor-pointer hover:scale-110 transition delay-150 duration-300" style="margin-left: 45%;" >Explore More <img style="display: inline-block;" src="assets/images/arrow.png"></button>
+       </div>
     </div>
 <!-- section 2 -->
  <div class="flex m-30 ">
@@ -34,10 +40,10 @@
         <img src="assets/images/about-2.jpg" class="w-50 h-50 border rounded-3xl relative z-50 border-8 border-white left hover:scale-110 transition delay-150 duration-300" style="left: 400px; bottom: 50px;">
     </div>
     <div style="margin-left: 45%; max-width: 40%;">  <!-- setting margin left 45% of screen for this div -->
-        <button class="bg-orange-100 p-2 border rounded-lg text-orange-600">About Us</button>
-        <h1 class="font-mono text-xl font-bold pt-3">Join us on our journey to celebrate the <br>art of food</h1>
+        <button class="bg-orange-100 p-2 border rounded-lg orange">About Us</button>
+        <h1 class="font-mono text-xl font-bold pt-3">Join us on our journey to celebrate the art of food</h1>
         <p class="bg-gray-300 p-4 shadow-xl mt-5">You don't have to cook fancy or complicated masterpiece- just good food from fresh ingredients 
-            <br><span class="text-orange-600">Julia Chid</span>
+            <br><span class="orange">Julia Chid</span>
         </p>
         <p class="py-6 text-sm text-gray-800">We use only the freshest ingredients sourced locally whenever possible,<br>
         to create dishes that are as wholesome as delicious. Our teams of<br>
@@ -45,12 +51,47 @@
         packed with flavor and love.
         </p>
         <div class="space-x-4">
-            <button class="border bg-orange-500 rounded-md p-2 text-white cursor-pointer hover:scale-110 transition delay-150 duration-300">Learn More</button>
-            <button class="border border-orange-500 bg-white rounded-md p-2 text-orange-600 cursor-pointer hover:scale-110 transition delay-100 duration-300">Contact Us</button>
+            <button class="border orange-bg rounded-md p-2 text-white cursor-pointer hover:scale-110 transition delay-150 duration-300">Learn More</button>
+            <button class="border border-orange-500 bg-white rounded-md p-2 orange cursor-pointer hover:scale-110 transition delay-100 duration-300">Contact Us</button>
         </div>
-
     </div>
  </div>
+ <!-- Section 4 -->
+  <div class="section4">
+    <h6 class="text-center pt-15 orange">Our specials</h6>
+    <h2 class="font-bold text-3xl text-center py-10">Discover a variety of dishes crafted with care.</h2>
+    <div class="flex justify-center pb-10">
+        <table > <!--set border radius -->
+            <tr>
+                <td> <button class="text-white orange-bg p-1">All</button> </td> <!--set hover and JS-->
+                <td>  <button class="orange p-1">Vegetarian</button> </td>
+                <td> <button class="orange p-1">Beverages</button> </td>
+            </tr>
+        </table>
+    </div>
+    <div class="grid grid-cols-4 gap-8 mx-20 pb-30">
+        <div class="bg-white border-t-4 border-orange-500">
+            <h3 class="text-center"><span class="orange-bg p-1 rounded-b-md">Rice & Curry</span></h3>
+            <h4 class="font-bold text-xl text-center pt-4">A Taste in Every Bite</h4>
+            <p class="text-center px-6 text-md text-gray-800 pt leading-tight">Explore the soul of Sri Lankan Culture with Rice & Curry</p>
+            <img class="pt-15" src="assets/images/courses-1.jpg"></div>
+        <div class="bg-white border-t-4 border-orange-500">
+            <h3 class="text-center"><span class="orange-bg p-1 rounded-b-md">Koththu</span></h3>
+            <h4 class="font-bold text-xl text-center pt-4">Cheesy, and delicious</h4>
+            <p class="text-center px-6 text-md text-gray-800 pt leading-tight">Everyone is a perfect balance of spice and creamy goodness</p>
+            <img class="pt-15" src="assets/images/courses-3.jpg"></div>
+        <div class="bg-white border-t-4 border-orange-500">
+            <h3 class="text-center"><span class="orange-bg p-1 rounded-b-md">Mango Juice</span></h3>
+            <h4 class="font-bold text-xl text-center pt-4">Refreshing and Natural</h4>
+            <p class="text-center px-6 text-md text-gray-800 pt leading-tight">Enjoy a chilled glass of fresh mango juicey</p>
+            <img class="pt-15" src="assets/images/beverage-1.jpg"></div>
+        <div class="bg-white border-t-4 border-orange-500">
+            <h3 class="text-center"><span class="orange-bg p-1 rounded-b-md">Milk Tea</span></h3>
+            <h4 class="font-bold text-xl text-center pt-4">A Warm cup of comfort</h4>
+            <p class="text-center px-6 text-md text-gray-800 pt leading-tight">The perfcet blend of tea and milk for a rich flavor</p>
+            <img class="pt-15" src="assets/images/beverage-2.jpg" style="height: 376px; width: 380px;"></div>
+    </div>
+  </div>
 </body>
 
 </html>

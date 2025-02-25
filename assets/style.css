@@ -4,7 +4,7 @@
 .orange-bg{
     background-color: #FF6F0F;
 }
-.section4 , .section8 {
+.section3 , .section8 {
     background-color: #F8ECE4;
 }
 table, tr, td {
@@ -51,3 +51,6 @@ table, tr, td {
     color: #FF6F0F;
 }
 /* responsiveness index sheet */
+@media screen and (min-width: 720px) {
+    #nav {margin-left: 40%;}
+}

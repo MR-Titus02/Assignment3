@@ -63,13 +63,13 @@
     <div class="flex justify-center pb-10">
         <table > <!--set border radius -->
             <tr>
-                <td> <button class="text-white orange-bg p-1">All</button> </td> <!--set hover and JS-->
-                <td>  <button class="orange p-1">Vegetarian</button> </td>
-                <td> <button class="orange p-1">Beverages</button> </td>
+                <td> <button id="All" onclick="btn1()" class="text-white orange-bg p-1 cursor-pointer">All</button> </td> <!--set hover and JS-->
+                <td>  <button id="Veg" onclick="btn2()" class="orange p-1 cursor-pointer">Vegetarian</button> </td>
+                <td> <button id="Bev" onclick="btn3()" class="orange p-1 cursor-pointer">Beverages</button> </td>
             </tr>
         </table>
     </div>
-    <div class="grid grid-cols-4 gap-8 mx-20 pb-30">
+    <div class="grid grid-cols-4 mx-20 gap-8 pb-30">
         <div class="bg-white border-t-4 border-orange-500">
             <h3 class="text-center"><span class="orange-bg p-1 rounded-b-md">Rice & Curry</span></h3>
             <h4 class="font-bold text-xl text-center pt-4">A Taste in Every Bite</h4>
@@ -92,6 +92,7 @@
             <img class="pt-15" src="assets/images/beverage-2.jpg" style="height: 376px; width: 380px;"></div>
     </div>
   </div>
+  <script src="main.js"></script>    
 </body>
 
 </html>
